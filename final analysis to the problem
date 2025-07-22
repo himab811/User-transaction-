@@ -1,0 +1,58 @@
+Engineered 23 features for 3497 wallets
+Creating credit score labels...
+Training credit scoring model...
+Model R² Score - Train: 0.926, Test: 0.894
+
+Top 10 Most Important Features:
+                feature  importance
+     total_transactions    0.241687
+           net_position    0.188315
+            repay_ratio    0.174394
+      liquidation_ratio    0.059580
+       same_amount_txns    0.059361
+         unique_actions    0.056962
+          deposit_ratio    0.053934
+   total_deposit_volume    0.033971
+borrow_to_deposit_ratio    0.030191
+     total_repay_volume    0.019248
+
+=== Credit Score Distribution ===
+Mean Score: 571.9
+Median Score: 472.0
+Score Range: 0 - 950
+
+Score Percentiles:
+10th percentile: 387
+25th percentile: 387
+50th percentile: 472
+75th percentile: 830
+90th percentile: 896
+
+Top 10 Highest Scored Wallets:
+                                    wallet  credit_score  total_transactions  days_active  repay_ratio  was_liquidated
+0x057c1c29f1e071c8a4f92baf4255e8b76e5f8eed           950                  33           81        0.273               0
+0x048aaa70a3e351c9e3b487ba78fa03efbf062067           950                  61           92        0.246               0
+0x00983187e18f62a2ac1dcebd63f2e5f50394cc74           950                  39           63        0.179               0
+0x0577ba0a9145afa894becc8f2387711fd48a6e04           950                  37           82        0.324               0
+0x029de7a8c9511978c4795beccf60553d36318cfd           949                  20           60        0.200               0
+0x0228c4032162fc5485f00f2638822c15f32ca561           949                  38          123        0.158               0
+0x0230d420819b2654845fb9c570ac53c969b6c386           949                  57           91        0.158               0
+0x02bee0a17903cc1f2f48b4514ec23aae547fe4a3           949                  71          108        0.169               0
+0x008183a11eacc113e85007bd14bfbd6da3f687f9           949                  63           96        0.159               0
+0x020265bc7ecc8b018c496f8bc4c6aa3ed1784e5a           949                  29           82        0.241               0
+
+Bottom 10 Lowest Scored Wallets:
+                                    wallet  credit_score  total_transactions  days_active  repay_ratio  was_liquidated
+0x0252e3524f4d28702b6b3ab7aa7c8eacaa9caf4d             6                  16           45        0.312               0
+0x009b56330ae5ec5042b9ca46ddb3043cc0d006f3             6                   3            8        0.000               1
+0x037cdd64f9b2e00fc6b7a1aa3e6152aff8718540             5                   2            1        0.000               0
+0x0224c4b1947b01be8f3c0629a65a05a59174905a             4                   3            1        0.000               0
+0x03a673e4a53120a0f6f57e49b202f38553917136             1                   7           24        0.000               0
+0x057fe25001337cdfd44a7917fb999290f93e35f4             0                   3            3        0.000               0
+0x055be3a0cff9bfefc49a270e6a4cf4ecf70b8779             0                  12            1        0.500               0
+0x05dd84aa953d75c659147045260352d89941e75e             0                   3            5        0.000               0
+0x049675d578aff8a085ea67947751cc2df717b863             0                  15            1        0.400               0
+0x0102b4bf6272eae55dffc8008ba81ac2bab58ca0             0                   3            7        0.000               0
+Saved results to wallet_credit_scores.csv
+
+Pipeline completed successfully!
